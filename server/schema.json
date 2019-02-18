@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "definitions": {
-    "opening-list": {
+    "day-schedule": {
       "type": "array",
       "items": {
         "type": "object",
@@ -24,25 +24,25 @@
   },
   "properties": {
     "monday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     },
     "tuesday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     },
     "wednesday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     },
     "thursday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     },
     "friday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     },
     "saturday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     },
     "sunday": {
-      "$ref": "#/definitions/opening-list"
+      "$ref": "#/definitions/day-schedule"
     }
   },
   "required": [
