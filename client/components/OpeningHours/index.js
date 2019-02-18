@@ -7,7 +7,7 @@ import styles from './index.css';
 export default function OpeningHours({ hours }) {
   return (
     <div className={styles.container}>
-      <div className={styles.caption}>
+      <div className={styles.header}>
         <ClockIcon width={18} height={18} />
         <div className={styles.title}>Opening hours</div>
       </div>
