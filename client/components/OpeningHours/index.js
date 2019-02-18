@@ -11,8 +11,12 @@ export default function OpeningHours({ hours }) {
         <ClockIcon width={18} height={18} />
         <div className={styles.title}>Opening hours</div>
       </div>
-      {hours.map(dayHours => (
-        <DaySchedule key={dayHours.day} day={dayHours.day} schedule={dayHours.schedule} />
+      {hours.map(daySchedule => (
+        <DaySchedule
+          key={daySchedule.day}
+          day={daySchedule.day}
+          schedule={daySchedule.schedule}
+        />
       ))}
     </div>
   );
