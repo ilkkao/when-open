@@ -2,6 +2,8 @@
 
 > Live demo: [https://when-open.ilkka.xyz/](https://when-open.ilkka.xyz/)
 
+[![Build Status](https://travis-ci.org/ilkkao/when-open.svg?branch=master)](https://travis-ci.org/ilkkao/when-open)
+
 The app reads restaurant opening hours from the data files stored in the `/data` directory.
 
 Supports the file format described in the [schema](https://github.com/ilkkao/when-open/blob/master/server/schema.json) file. The backend internally converts the data files to a format that is straightforward to render on the frontend side.
