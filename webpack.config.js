@@ -7,38 +7,22 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        use: { loader: 'babel-loader' }
       },
       {
         test: /\.css$/,
         use: [
           { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
-          }
+          { loader: 'css-loader', options: { modules: true } }
         ]
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-            options: { minimize: true }
-          }
-        ]
+        use: [{ loader: 'html-loader', options: { minimize: true } }]
       },
       {
         test: /\.woff2$/,
-        use: [
-          {
-            loader: 'file-loader'
-          }
-        ]
+        use: [{ loader: 'file-loader' }]
       }
     ]
   },
