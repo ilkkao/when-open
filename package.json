@@ -1,0 +1,23 @@
+{
+  "name": "opening-hours",
+  "version": "0.0.1",
+  "description": "Simple opening hours web app",
+  "repository": "git://github.com/ilkkao/opening-hours.git",
+  "author": "Ilkka Oksanen <ilkka@iao.fi>",
+  "license": "MIT",
+  "scripts": {
+    "dev-server": "nodemon ./server/index.js",
+    "server": "node ./server/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "jsonschema": "^1.2.4",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.8",
+    "koa-compress": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0"
+  }
+}

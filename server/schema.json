@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "definitions": {
+    "opening-list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["open", "close"]
+          },
+          "value": {
+            "type": "integer",
+            "min": 0,
+            "max": 86399
+          }
+        },
+        "required": ["type", "value"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "properties": {
+    "monday": {
+      "$ref": "#/definitions/opening-list"
+    },
+    "tuesday": {
+      "$ref": "#/definitions/opening-list"
+    },
+    "wednesday": {
+      "$ref": "#/definitions/opening-list"
+    },
+    "thursday": {
+      "$ref": "#/definitions/opening-list"
+    },
+    "friday": {
+      "$ref": "#/definitions/opening-list"
+    },
+    "saturday": {
+      "$ref": "#/definitions/opening-list"
+    },
+    "sunday": {
+      "$ref": "#/definitions/opening-list"
+    }
+  },
+  "required": [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday"
+  ],
+  "additionalProperties": false
+}
