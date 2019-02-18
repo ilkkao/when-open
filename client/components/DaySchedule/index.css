@@ -1,0 +1,25 @@
+.container {
+  border-bottom: 1px solid rgba(32, 33, 37, 0.08);
+  display: flex;
+  padding: 10px 0;
+}
+
+.dayName {
+  color: #202125;
+  font-family: 'CircularStd-Medium';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.hoursList {
+  color: #202125;
+  flex: 1;
+  font-family: 'CircularStd-Book';
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.closed {
+  color: rgba(32, 33, 37, 0.42);
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('../../assets/CircularStd-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'CircularStd-Medium';
+  src: url('../../assets/CircularStd-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('../../assets/CircularStd-Book.woff2') format('woff2');
+}
+
+:global html,
+:global body {
+  font-family: 'CircularStd-Book';
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+.background {
+  align-items: center;
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+}
