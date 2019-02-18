@@ -55,12 +55,12 @@
   },
   "jest": {
     "setupFiles": [
-      "<rootDir>/client/test/setupTests.js",
+      "<rootDir>/client/testSupport/setupTests.js",
       "jest-date-mock"
     ],
     "moduleNameMapper": {
-      "\\.css$": "<rootDir>/client/test/styleMock.js",
-      "\\.woff2$": "<rootDir>/client/test/fileMock.js"
+      "\\.css$": "<rootDir>/client/testSupport/styleMock.js",
+      "\\.woff2$": "<rootDir>/client/testSupport/fileMock.js"
     }
   }
 }
