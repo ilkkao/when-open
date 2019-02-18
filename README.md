@@ -50,3 +50,8 @@ $ docker-compose up --build
 ## Credits
 
 Clock icon by Eagle Eye from the Noun Project
+
+## TODO
+
+- More client tests
+- More server API tests
