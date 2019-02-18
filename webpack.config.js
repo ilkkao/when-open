@@ -1,23 +1,22 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./client/index.js",
+  entry: './client/index.js',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
         test: /\.css$/,
-        exclude: [/node_modules/],
         use: [
-          { loader: "style-loader" },
+          { loader: 'style-loader' },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: true
             }
@@ -28,7 +27,7 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
             options: { minimize: true }
           }
         ]
@@ -37,7 +36,7 @@ module.exports = {
         test: /\.woff2$/,
         use: [
           {
-            loader: "file-loader"
+            loader: 'file-loader'
           }
         ]
       }
@@ -45,8 +44,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./client/index.html",
-      filename: "./index.html"
+      template: './client/index.html',
+      filename: './index.html'
     })
   ]
 };
