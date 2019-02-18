@@ -23,7 +23,7 @@ You need Node.js and yarn
    $ yarn
    ```
 
-3. Start webpack (in the first terminal)
+3. Start webpack
 
    ```
    $ yarn run dev
