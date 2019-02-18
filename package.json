@@ -1,8 +1,8 @@
 {
-  "name": "opening-hours",
+  "name": "when-open",
   "version": "0.0.1",
   "description": "Simple opening hours web app",
-  "repository": "git://github.com/ilkkao/opening-hours.git",
+  "repository": "git://github.com/ilkkao/when-open.git",
   "author": "Ilkka Oksanen <ilkka@iao.fi>",
   "license": "MIT",
   "scripts": {

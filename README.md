@@ -2,7 +2,7 @@
 
 The app reads restaurant opening hours from the data files stored in the `/data` directory.
 
-Supports the file format described in the [schema](https://github.com/ilkkao/opening-hours/blob/master/server/schema.json) file. The backend internally converts the data files to a format that is straightforward to render on the frontend side.
+Supports the file format described in the [schema](https://github.com/ilkkao/when-open/blob/master/server/schema.json) file. The backend internally converts the data files to a format that is straightforward to render on the frontend side.
 
 ## Development setup
 
@@ -11,8 +11,8 @@ You need Node.js and yarn
 1. Clone the repo
 
    ```
-   $ git clone https://github.com/ilkkao/opening-hours.git
-   $ cd opening-hours
+   $ git clone https://github.com/ilkkao/when-open.git
+   $ cd when-open
    ```
 
 2. Install dependencies
