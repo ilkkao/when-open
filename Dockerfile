@@ -2,7 +2,7 @@ FROM node:11
 
 MAINTAINER Ilkka Oksanen <ilkka@iao.fi>
 
-COPY ["package.json", "yarn.lock", ".babelrc", "webpack.config.js", "/app/"]
+COPY ["package.json", "yarn.lock", "babel.config.js", "webpack.config.js", "/app/"]
 COPY server /app/server/
 COPY client /app/client/
 COPY data /app/data/
