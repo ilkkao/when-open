@@ -15,17 +15,11 @@ app.use(compress());
 router.get('/', async ctx => {
   ctx.set('Cache-control', 'private, max-age=0, no-cache');
 
-  await send(ctx, 'index.html', {
-    root: 'dist',
-    maxage: 200
-  });
+  await send(ctx, 'index.html', { root: 'dist' });
 });
 
 router.get('/:file', async ctx => {
-  await send(ctx, ctx.params.file, {
-    root: 'dist',
-    maxage: 200
-  });
+  await send(ctx, ctx.params.file, { root: 'dist', maxage: 200 });
 });
 
 router.get('/api/restaurants.json', async ctx => {
@@ -42,11 +36,9 @@ router.get('/api/restaurants/:restaurant/opening-hours.json', async ctx => {
   }
 });
 
-(async () => {
-  app.use(router.routes());
-  app.use(router.allowedMethods());
+app.use(router.routes());
+app.use(router.allowedMethods());
 
-  app.listen(PORT, () => {
-    console.warn(`Listening port: ${PORT}`); // eslint-disable-line
-  });
-})();
+app.listen(PORT, () => {
+  console.warn(`Listening port: ${PORT}`); // eslint-disable-line no-console
+});
