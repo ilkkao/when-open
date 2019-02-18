@@ -46,6 +46,7 @@
     "koa-compress": "^3.0.0",
     "koa-router": "^7.4.0",
     "koa-send": "^5.0.0",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
