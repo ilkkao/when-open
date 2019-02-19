@@ -24,7 +24,8 @@ function getNextDay(day) {
 
 function loadOpeningHours(restaurant) {
   const file = fs.readFileSync(
-    path.join(__dirname, `../data/${restaurant}.json`),
+    // Allow alphanumeric characters and dashes in the restaurant name
+    path.join(__dirname, `../data/${restaurant.replace(/[^\w-]/gi, '')}.json`),
     'utf8'
   );
 

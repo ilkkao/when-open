@@ -51,11 +51,13 @@ class App extends Component {
 
     return (
       <div className={styles.app}>
-        <Select
-          value={selectedRestaurant}
-          onChange={this.handleChangeRestaurant}
-          options={restaurants}
-        />
+        <div className={styles.select}>
+          <Select
+            value={selectedRestaurant}
+            onChange={this.handleChangeRestaurant}
+            options={restaurants}
+          />
+        </div>
         <div className={styles.background}>
           {openingHours ? <OpeningHours hours={openingHours} /> : null}
         </div>
