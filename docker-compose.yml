@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: 'mas:latest'
+    image: 'when-open:latest'
     build: .
     restart: always
     command: yarn run server
